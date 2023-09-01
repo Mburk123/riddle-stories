@@ -2,68 +2,19 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Bare - Start Bootstrap Template</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .challenge.container {
-      width:100%;
-      padding:0;
-    }
-  </style>
-
+    <?php include 'includes/head.php'; ?>
 </head>
 
 <body style="background-color: #DFDFDF">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<?php include 'includes/navigation.php'; ?>
+
+<p>
+Das hier ist neuer Inhalt
+</p>
 
   <!-- Page Content -->
-  <div class="container">
-    <div class="row" style="background-color:white">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5" style="color: #cdae51"><b>Wisdom Pet Medicine</b></h1>
-        <h2 style="font-size:16pt;">We treat your pets like we treat our own.</h2>
-        <img style="width:100%" src="./images/all-animals.jpg">
-        <p style="padding-top:30px"><a href="#" style="color:#777777">Visit Us</a></p>
-        <p style="text-align:justify; max-width:600px; margin:auto; padding-bottom:30px;">Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of health conditions in companion animals, including dogs, cats, birds, reptiles, rodents, and fish. We apply the latest healthcare technology, along with the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest and most effective treatments and cures, while maintaining a caring relationship with our patients and their guardians.</p>
-      </div>
-    </div>
-  </div>
+
 
   <div class="container challenge" style="padding-bottom:30px;">
     <h3 style="font-size:16pt;padding-top:30px;text-align:center;">REVIEWS</h3>
@@ -91,10 +42,17 @@
     </div>
   </div>
 
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+  <?php include 'includes/footer.php'; ?>
+</footer>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
+
 
 </html>
