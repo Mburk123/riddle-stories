@@ -20,9 +20,23 @@ Das hier ist neuer Inhalt
     <h3 style="font-size:16pt;padding-top:30px;text-align:center;">REVIEWS</h3>
     <div class="row" style="background-color:white;">
       <div class="col-sm-6 col-lg-3" style="border:5px solid #DFDFDF;background-color:white;padding:10px;">
-        <h6><b>Thanks for helping our German Shorthair</b></h6>
-        <p>During the summer, my German Shorthair Pointer, Tonto, began to have severe redness and itching on his belly and feet. Through diagnostic testing, we learned that Tonto is severely allergic to over a dozen kinds of grass pollens.</p>
-        <p>We’ve now been doing allergy injections for several months, and his itching and redness have nearly gone away. I’m very thankful to the veterinarians and staff at Wisdom for the excellent care Tonto received, and for nipping his allergies in the bud, so to speak.</p>
+        <h6><b>Kontaktieren Sie uns!</b></h6>
+                
+        <form action="kontaktverarbeitung.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+
+            <input type="submit" value="Absenden">
+        </form>
       </div>
       <div class="col-sm-6 col-lg-3" style="border:5px solid #DFDFDF;background-color:white;padding:10px;">
         <h6><b>Thanks to you, our diabetic kitty is better</b></h6>

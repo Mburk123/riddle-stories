@@ -9,47 +9,41 @@
 
 <?php include 'includes/navigation.php'; ?>
 
-<p>
-Das hier ist neuer Inhalt
-</p>
-
-<h1>Hinweise entschlüsseln</h1>
-  <form action="" method="post">
-    <label for="number">Einen sechstelligen Zahlencode eingeben: </label>
-    <input type="number" id="number" name="number" required>
-    <button type="submit" name="submit">Antwort erhalten</button>
-  </form>
-
-  <?php
-
-    error_reporting(E_ALL);         // zeigt Fehlermeldungen direkt an.
-    ini_set('display_errors', 1);   // zeigt Fehlermeldungen direkt an.
-
-  if(isset($_POST['submit'])) {
-    if(isset($_POST['number'])) {
-
-        include 'php/dataBaseRiddles.php';
-        include 'php/ownPhpFunctions.php';
-
-        $answer =returnAnswer($dataBase, $_POST['number']);
-        echo '<p>Code ' . $_POST['number'] . ': ' . $answer . '</p>';
-
-    } else {
-      echo '<p>No number was entered.</p>';
-    }
-  }
-  ?>
-
   <!-- Page Content -->
 
 
   <div class="container challenge" style="padding-bottom:30px;">
-    <h3 style="font-size:16pt;padding-top:30px;text-align:center;">REVIEWS</h3>
+    <h3 style="font-size:16pt;padding-top:30px;text-align:center;">ADVENTSKALENDER</h3>
     <div class="row" style="background-color:white;">
       <div class="col-sm-6 col-lg-3" style="border:5px solid #DFDFDF;background-color:white;padding:10px;">
-        <h6><b>Thanks for helping our German Shorthair</b></h6>
-        <p>During the summer, my German Shorthair Pointer, Tonto, began to have severe redness and itching on his belly and feet. Through diagnostic testing, we learned that Tonto is severely allergic to over a dozen kinds of grass pollens.</p>
-        <p>We’ve now been doing allergy injections for several months, and his itching and redness have nearly gone away. I’m very thankful to the veterinarians and staff at Wisdom for the excellent care Tonto received, and for nipping his allergies in the bud, so to speak.</p>
+        <h6><b>Hinweise entschlüsseln</b></h6>
+
+          <form action="" method="post">
+            <label for="number">Einen sechstelligen Zahlencode eingeben: </label>
+            <input type="number" id="number" name="number" required>
+            <button type="submit" name="submit">Antwort erhalten</button>
+          </form>
+
+          <?php
+
+            error_reporting(E_ALL);         // zeigt Fehlermeldungen direkt an.
+            ini_set('display_errors', 1);   // zeigt Fehlermeldungen direkt an.
+
+          if(isset($_POST['submit'])) {
+            if(isset($_POST['number'])) {
+
+                include 'php/dataBaseRiddles.php';
+                include 'php/ownPhpFunctions.php';
+
+                $answer =returnAnswer($dataBase, $_POST['number']);
+                echo '<p>Code ' . $_POST['number'] . ': ' . $answer . '</p>';
+
+            } else {
+              echo '<p>No number was entered.</p>';
+            }
+          }
+          ?>
+
       </div>
       <div class="col-sm-6 col-lg-3" style="border:5px solid #DFDFDF;background-color:white;padding:10px;">
         <h6><b>Thanks to you, our diabetic kitty is better</b></h6>
