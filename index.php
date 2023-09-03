@@ -2,58 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Bare - Start Bootstrap Template</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .challenge.container {
-      width:100%;
-      padding:0;
-    }
-  </style>
+    <?php include 'includes/head.php'; ?>
 </head>
 
 <body style="background-color: #DFDFDF">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-    <div>
-        <img src="images/logo.jpg" alt="Logo" width="30" height="30">
-        <a class="navbar-brand" href="https://www.riddles.ch"> Riddles</a>
-    </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="UeberUns">Über uns</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Produkte">Produkte</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Kontakt">Kontakt</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<?php include 'includes/navigation.php'; ?>
+
+
+<div id="introtext">
+    <?php include 'includes/introtext.php'; ?>
+</div>
+
 
 <p>
-Das hier ist neuer Inhalt
+Neuer Host
 </p>
 
   <!-- Page Content -->
@@ -87,17 +50,7 @@ Das hier ist neuer Inhalt
 
 <!-- Footer-->
 <footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">
-    Copyright &copy; Your Website 2023
-    </p>
-  
-    <p class="m-0 text-center text-white">
-    <a href="https://twitter.com"><img class="icon" src="images/socialmedia/twitter.png" alt="icon for twitter" /></a>
-    <a href="http://www.facebook.com"><img class="icon" src="images/socialmedia/facebook.png" alt="icon for facebook" /></a>
-    <a href="http://www.youtube.com"><img class="icon" src="images/socialmedia/youtube.png" alt="icon for youtube" /></a>
-    </p>
-  </div>
+  <?php include 'includes/footer.php'; ?>
 </footer>
 
   <!-- Bootstrap core JavaScript -->
